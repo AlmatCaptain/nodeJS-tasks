@@ -1,0 +1,45 @@
+html {
+	font-size: 10px;
+	font-family: 'Lato', sans-serif;
+	text-align: center;
+}
+
+p,
+li,
+dl {
+	font-size: 16px;
+	line-height: 2;
+	letter-spacing: 1px;
+}
+
+#nav-menu {
+	list-style: none;
+	padding: 10px;
+	margin: 10px;
+	background-color: #000000;
+	text-align: center;
+}
+
+#nav-menu li {
+	display: inline-block;
+	width: 16%;
+	margin-right: auto;
+}
+
+#nav-menu a {
+	display: block;
+	text-decoration: none;
+	height: 100%;
+	line-height: 100%;
+	color: #fff;
+}
+
+#nav-menu a:hover {
+	background-color: #ffffff;
+	color: #000000;
+}
+
+#nav-menu a.active {
+	background-color: #eee;
+	color: #444;
+}
