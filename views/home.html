@@ -11,6 +11,13 @@
 			<li><a href="/">Home</a></li>
 			<li><a href="/users">Users</a></li>
 		</ul>
-		<h1>Hello on Home Page of my Web Site!</h1>
+		<form action="/addUser" method="POST">
+			<div>
+				<label for="name">Name</label>
+				<input type="text" name="name" />
+			</div>
+
+			<button class="btn" type="submit">Add user</button>
+		</form>
 	</body>
 </html>

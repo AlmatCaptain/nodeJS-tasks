@@ -6,8 +6,16 @@ const rootDir = require('../util/path')
 
 const router = express.Router()
 
+const users = []
+
 router.get('/', (req, res, next) => {
-	res.sendFile(path.join(rootDir, 'views', 'home.html'))
+	res.render('home', { title: "Home Page" })
 })
 
-module.exports = router
+router.post('/addUser', (req, res, next) => {
+	users.push({ name: req.body.name })
+	res.redirect('/')
+})
+
+exports.router = router
+exports.users = users
